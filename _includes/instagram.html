@@ -6,9 +6,18 @@
         <div class="col-md-12">
             <!-- Generate such a widget at snapwidget.com for your name -->
             <!-- Copy/paste code here or just update the snapwidget value at _config.yml -->
-           <img src="https://wesleyshen.github.io/1.JPG" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; ">
-            <img src="https://wesleyshen.github.io/2.JPG" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; ">
-            frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+            <img id="img" onmouseover="bigger()" onmouseout="smaller()" src="wesleyshen.github.io/1.JPG" style="width:100px;height:100px;" />
+            
+            <script type="text/javascript">
+                
+                var img = document.getElementById('img');
+                
+                function bigger(){  img.style.width = '400px';  img.style.height = '400px'; }
+                
+                function smaller(){  img.style.width = '100px';  img.style.height = '100px'; }
+                
+                </script>
+            
         </div>
     </div>
 </section>
